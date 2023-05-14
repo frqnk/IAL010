@@ -12,6 +12,7 @@ int main() {
     }
 
     cout << somatorio << endl;
+
     system("pause");
     return 0;
 }
