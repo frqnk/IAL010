@@ -352,8 +352,8 @@ Os códigos dos programas devem ser salvos em um arquivo de texto (Word, Bloco d
         }
 
         cout << somatorio << endl;
-        system("pause");
 
+        system("pause");
         return 0;
     }
     ```
