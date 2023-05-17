@@ -1,6 +1,12 @@
 #include <iostream>
+#include <locale>
+
 using namespace std;
+
 int main() {
+    setlocale(LC_ALL, "Portuguese");
+    system("cls");
+
     int destino, opcao, valor;
 
     do {
@@ -14,7 +20,7 @@ int main() {
     while(destino != 1 && destino != 2 && destino != 3 && destino != 4);
 
     do {
-        cout << "Escolha uma das opÃ§Ãµes:" << endl;
+        cout << "Escolha uma das opções:" << endl;
         cout << "1. Somente ida" << endl;
         cout << "2. Ida e volta" << endl;
         cin >> opcao;

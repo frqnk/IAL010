@@ -1,9 +1,15 @@
 #include <iostream>
+#include <locale>
 #include <cstdlib>
 #include <ctime>
+
 using namespace std;
+
 int main() {
+    setlocale(LC_ALL, "Portuguese");
     srand(time(NULL));
+    system("cls");
+
     int N = rand() % 7 + 3;
     int A[N], B[N], C[N], D[N], E[N];
 

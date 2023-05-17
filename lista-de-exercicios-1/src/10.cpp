@@ -1,14 +1,20 @@
 #include <iostream>
+#include <locale>
+
 using namespace std;
+
 int main() {
+    setlocale(LC_ALL, "Portuguese");
+    system("cls");
+
     int n;
 
-    cout << "Defina o nÃºmero de elementos: ";
+    cout << "Defina o número de elementos: ";
     cin >> n;
     int vetor[n];
 
     for(int i = 0; i < n; i++) {
-        cout << "Defina o valor do " << i+1 << "Âº elemento: ";
+        cout << "Defina o valor do " << i+1 << "º elemento: ";
         cin >> vetor[i];
     }
 

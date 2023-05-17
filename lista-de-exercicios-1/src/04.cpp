@@ -1,6 +1,12 @@
 #include <iostream>
+#include <locale>
+
 using namespace std;
+
 int main() {
+    setlocale(LC_ALL, "Portuguese");
+    system("cls");
+
     int input, cal = 0;
 
     do {
@@ -55,9 +61,9 @@ int main() {
 
     do {
         cout << "Escolha a bebida:" << endl;
-        cout << "1. ChÃ¡" << endl;
+        cout << "1. Chá" << endl;
         cout << "2. Suco de laranja" << endl;
-        cout << "3. Suco de melÃ£o" << endl;
+        cout << "3. Suco de melão" << endl;
         cout << "4. Refrigerante diet" << endl;
         cin >> input;
     }
