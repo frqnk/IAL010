@@ -1,0 +1,3 @@
+# Exercício 8
+
+Escrever um programa que calcule e apresente o somatório do número de grãos de trigo que se pode obter em um tabuleiro de xadrez obedecendo a seguinte regra: colocar um grão de trigo no primeiro quadro e nos quadros seguintes o dobro do quadro anterior. Ou seja, no primeiro coloca-se um grão, no segundo quadro coloca-se dois grãos (neste momento tem-se três grãos), no terceiro coloca-se quatro grãos.Repetir até atingir o sexagésimo quarto quadro. (Este exercício foi baseado em uma situação do capítulo 16 do livro “O Homem que calculava” de Malba Tahan.)
