@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    system("cls");
 
     int input;
     float montante = 0;
@@ -18,9 +17,10 @@ int main() {
     cin >> input;
     montante += input * 1.5;
 
-    cout << "Total arrecadado: R$ " << montante << endl;
-    cout << "Você deve guardar na poupança R$ " << montante * 10/100 << endl;
-
+    cout.precision(2);
+    cout << "Total arrecadado: R$ " << fixed << montante << endl;
+    cout << "Você deve guardar na poupança R$ " << fixed << montante * 10/100 << endl;
     system("pause");
+
     return 0;
 }

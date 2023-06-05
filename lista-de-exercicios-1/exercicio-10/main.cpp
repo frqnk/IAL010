@@ -5,38 +5,35 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    system("cls");
 
     int n;
 
-    cout << "Defina o número de elementos: ";
+    cout << "Dê o número de elementos do vetor: ";
     cin >> n;
     int vetor[n];
 
+    cout << "Dê os elementos do vetor: ";
     for(int i = 0; i < n; i++) {
-        cout << "Defina o valor do " << i+1 << "º elemento: ";
         cin >> vetor[i];
     }
 
     for(int i = 0; i < n - 1; i++) {
-        int posicao_do_menor = i;
         for(int j = i + 1; j < n; j++) {
-            if(vetor[j] < vetor[posicao_do_menor]) {
-                posicao_do_menor = j;
+            if(vetor[j] < vetor[i]) {
+                swap(vetor[j], vetor[i]);
             }
         }
-        if(posicao_do_menor != i) {
-            swap(vetor[i], vetor[posicao_do_menor]);
+    }
+
+    cout << "vetor[" << n << "] = {";
+    for(int i = 0; i < n; i++) {
+        cout << vetor[i];
+        if(i != n-1) {
+            cout << ", ";
         }
     }
-
-    cout << "Elementos ordenados: ";
-    for(int i = 0; i < n; i++) {
-        cout << vetor[i] << " ";
-    }
-
-    cout << endl;
-
+    cout << "}" << endl;
     system("pause");
+
     return 0;
 }

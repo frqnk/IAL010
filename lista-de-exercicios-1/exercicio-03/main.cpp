@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    system("cls");
 
     int input, montante = 0;
 
@@ -22,7 +21,7 @@ int main() {
     montante += input * 15;
 
     cout << "Valor total: R$ " << montante << endl;
-
     system("pause");
+
     return 0;
 }

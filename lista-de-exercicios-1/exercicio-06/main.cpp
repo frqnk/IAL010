@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    system("cls");
 
     int idade, dosagem;
     float peso;
@@ -45,8 +44,8 @@ int main() {
         }
     }
 
-    cout << "Receita: " << dosagem << "mg (" << dosagem * 20/500 << " gotas)" << endl;
-
+    cout << "Receita: " << dosagem << " mg (" << dosagem * 20/500 << " gotas)" << endl;
     system("pause");
+
     return 0;
 }
