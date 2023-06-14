@@ -6,21 +6,21 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "Portuguese");
 
-    int input, montante = 0;
+    int input, valor_arrecadado = 0;
 
     cout << "Qtde. de camisetas P: ";
     cin >> input;
-    montante += input * 10;
+    valor_arrecadado += input * 10;
 
     cout << "Qtde. de camisetas M: ";
     cin >> input;
-    montante += input * 12;
+    valor_arrecadado += input * 12;
 
     cout << "Qtde. de camisetas G: ";
     cin >> input;
-    montante += input * 15;
+    valor_arrecadado += input * 15;
 
-    cout << "Valor total: R$ " << montante << endl;
+    cout << "Valor total: R$ " << valor_arrecadado << endl;
     system("pause");
 
     return 0;
