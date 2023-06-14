@@ -4,8 +4,8 @@
 
 using namespace std;
 
-float volume_da_esfera_de_raio(float raio) {
-    return (4 * M_PI * pow(raio, 3)) / 3;
+float volume_da_esfera_de_raio(float r) {
+    return (float) 4 / 3 * M_PI * pow(r, 3);
 }
 
 int main() {
