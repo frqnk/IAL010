@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     unsigned long long int graos_no_quadro, graos_no_tabuleiro;
-    // curiosamente o resultado deste exercÃ­cio Ã© igual a ULLONG_MAX
+    // curiosamente o resultado deste exercício é igual a ULLONG_MAX
 
     for(int quadro = 1; quadro <= 64; quadro++) {
         if(quadro == 1) {
