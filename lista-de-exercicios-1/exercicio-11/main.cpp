@@ -12,8 +12,8 @@ int main() {
     int matriz[10][10], x = 0, y = 0;
     // x e y serão as coordenadas do maior valor
 
-    for(int i = 0; i < 10; i++) { // eixo x (coluna)
-        for(int j = 0; j < 10; j++) { // eixo y (linha)
+    for(int i = 0; i < 10; i++) { // eixo x (coluna), ordem indiferente
+        for(int j = 0; j < 10; j++) { // eixo y (linha), ordem indiferente
             matriz[i][j] = rand() % 100000;
             if(matriz[i][j] > matriz[x][y]) {
                 x = i;
@@ -23,13 +23,13 @@ int main() {
     }
 
     cout << "y" << endl;
-    for(int j = 9; j >= 0; j--) { // eixo y (linha)
+    for(int j = 9; j >= 0; j--) { // eixo y (linha), sentido de leitura (de cima pra baixo)
         cout << j+1;
         if(j == y) {
             cout << "*";
         }
         cout << "\t";
-        for(int i = 0; i < 10; i++) { // eixo x (coluna)
+        for(int i = 0; i < 10; i++) { // eixo x (coluna), sentido de leitura (da esquerda pra direita)
             cout << matriz[i][j];
             if(i == x && j == y) {
                 cout << "*";
