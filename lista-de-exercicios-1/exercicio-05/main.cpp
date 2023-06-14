@@ -9,7 +9,7 @@ int main() {
     int destino, opcao, valor;
 
     do {
-        cout << "Escolha a região do destino:" << endl;
+        cout << "Escolha a região de destino:" << endl;
         cout << "1. Norte" << endl;
         cout << "2. Nordeste" << endl;
         cout << "3. Centro-oeste" << endl;
