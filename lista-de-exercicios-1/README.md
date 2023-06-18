@@ -1,4 +1,4 @@
-# Lista de Exercícios de Algoritmos – 1º semestre 2023
+# Lista de Exercícios de Algoritmos – 1º sem. 2023
 
 Os códigos dos programas devem ser salvos em um arquivo de texto (Word, Bloco de Notas etc.) e esse arquivo deve ser compactado, renomeado para o nome do aluno (obrigatoriamente) e postado na atividade na plataforma Teams.
 

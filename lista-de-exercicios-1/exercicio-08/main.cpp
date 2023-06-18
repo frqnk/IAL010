@@ -13,7 +13,7 @@ Portanto:
 
 S = 1(2^64-1)/(2-1) = 2^64-1 = 18.446.744.073.709.551.615
 
-Curiosamente esse resultado é igual a ULLONG_MAX
+Curiosamente esse resultado é exatamente igual a ULLONG_MAX
 */
 
 #include <iostream>
