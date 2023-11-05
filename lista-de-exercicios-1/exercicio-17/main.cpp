@@ -3,14 +3,14 @@
 
 using namespace std;
 
-bool verifica_perfeito(int n) {
-    int aux = 0;
+bool perfeito(int n) {
+    int soma_divisores = 0;
     for(int i = n-1; i > 0; i--) {
         if(n % i == 0) {
-            aux += i;
+            soma_divisores += i;
         }
     }
-    if(aux == n) {
+    if(soma_divisores == n) {
         return true;
     }
     else {
@@ -26,7 +26,7 @@ int main() {
     cout << "Dê um número para verificar se é perfeito: ";
     cin >> input;
 
-    if(verifica_perfeito(input) == true) {
+    if(perfeito(input) == true) {
         cout << "Verdadeiro" << endl;
     }
     else {

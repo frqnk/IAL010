@@ -4,16 +4,16 @@
 
 using namespace std;
 
-int zeros_na_matriz(int m[3][3]) {
-    int n = 0;
+int n_zeros_na_matriz_3x3(int m[3][3]) {
+    int n_zeros = 0;
     for(int i = 0; i < 3; i++) {
         for(int j = 0; j < 3; j++) {
             if(m[j][i] == 0) {
-                n++;
+                n_zeros++;
             }
         }
     }
-    return n;
+    return n_zeros;
 }
 
 int main() {
@@ -40,8 +40,8 @@ int main() {
     }
     cout << "}\n" << endl;
 
-    cout << "O zero aparece " << zeros_na_matriz(m);
-    if(zeros_na_matriz(m) == 1) {
+    cout << "O zero aparece " << n_zeros_na_matriz_3x3(m);
+    if(n_zeros_na_matriz_3x3(m) == 1) {
         cout << " vez";
     }
     else {

@@ -3,14 +3,14 @@
 
 using namespace std;
 
-bool verifica_primo(int n) {
-    int aux = 0;
+bool primo(int n) {
+    int n_divisores = 0;
     for(int i = n; i > 0; i--) {
         if(n % i == 0) {
-            aux++;
+            n_divisores++;
         }
     }
-    if(aux == 2) {
+    if(n_divisores == 2) {
         return true;
     }
     else {
@@ -26,7 +26,7 @@ int main() {
     cout << "Dê um número para verificar se é primo: ";
     cin >> input;
 
-    if(verifica_primo(input) == true) {
+    if(primo(input) == true) {
         cout << "Verdadeiro" << endl;
     }
     else {
