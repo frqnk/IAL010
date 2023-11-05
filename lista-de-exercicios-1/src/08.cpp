@@ -1,6 +1,12 @@
 #include <iostream>
+#include <locale>
+
 using namespace std;
+
 int main() {
+    setlocale(LC_ALL, "Portuguese");
+    system("cls");
+
     float somatorio = 0;
 
     for(int expoente = 0; expoente < 64; expoente++) {

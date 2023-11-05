@@ -1,6 +1,12 @@
 #include <iostream>
+#include <locale>
+
 using namespace std;
+
 int main() {
+    setlocale(LC_ALL, "Portuguese");
+    system("cls");
+
     int input, montante = 0;
 
     cout << "Qtde. de camisetas P: ";

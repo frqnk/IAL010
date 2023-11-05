@@ -1,10 +1,16 @@
 #include <iostream>
+#include <locale>
+
 using namespace std;
+
 int main() {
+    setlocale(LC_ALL, "Portuguese");
+    system("cls");
+
     int input;
     float montante = 0;
 
-    cout << "Quantos pÃ£ezinhos foram vendidos? ";
+    cout << "Quantos pãezinhos foram vendidos? ";
     cin >> input;
     montante += input * 0.12;
 
@@ -13,7 +19,7 @@ int main() {
     montante += input * 1.5;
 
     cout << "Total arrecadado: R$ " << montante << endl;
-    cout << "VocÃª deve guardar na poupanÃ§a R$ " << montante * 10/100 << endl;
+    cout << "Você deve guardar na poupança R$ " << montante * 10/100 << endl;
 
     system("pause");
     return 0;
