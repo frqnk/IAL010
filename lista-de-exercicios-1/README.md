@@ -32,7 +32,7 @@ Os códigos dos programas devem ser salvos em um arquivo de texto (Word, Bloco d
 
     * Adultos ou adolescentes desde 12 anos, inclusive, se tiverem peso igual ou acima de 60 quilos devem tomar 1000mg; com peso abaixo de 60 quilos devem tomar 875mg
 
-    - Para crianças e adolescentes abaixo de 12 anos, a dosagem é calculada pelo peso corpóreo conforme a tabela a seguir:
+    * Para crianças e adolescentes abaixo de 12 anos, a dosagem é calculada pelo peso corpóreo conforme a tabela a seguir:
 
         |PESO          |DOSAGEM|
         |:------------:|:-----:|
