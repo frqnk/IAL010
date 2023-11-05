@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    system("cls");
 
     int input, cal = 0;
 
@@ -85,7 +84,7 @@ int main() {
     }
 
     cout << "Total de calorias: " << cal << endl;
-
     system("pause");
+
     return 0;
 }

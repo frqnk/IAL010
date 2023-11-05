@@ -1,24 +1,24 @@
 #include <iostream>
-#include <locale>
 
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "Portuguese");
-    system("cls");
+    unsigned long long int graos_no_quadro, graos_no_tabuleiro;
+    // curiosamente o resultado deste exercício é igual a ULLONG_MAX
 
-    float somatorio = 0;
-
-    for(int expoente = 0; expoente < 64; expoente++) {
-        float produtorio = 1;
-        for(int i = 0; i < expoente; i++) {
-            produtorio *= 2;
+    for(int quadro = 1; quadro <= 64; quadro++) {
+        if(quadro == 1) {
+            graos_no_quadro = 1;
+            graos_no_tabuleiro = graos_no_quadro;
         }
-        somatorio += produtorio;
+        else {
+            graos_no_quadro *= 2;
+            graos_no_tabuleiro += graos_no_quadro;
+        }
     }
 
-    cout << somatorio << endl;
-
+    cout << graos_no_tabuleiro << endl;
     system("pause");
+
     return 0;
 }

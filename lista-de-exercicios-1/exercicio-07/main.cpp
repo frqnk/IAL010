@@ -1,21 +1,18 @@
 #include <iostream>
-#include <locale>
-#include <limits>
+#include <climits>
 
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "Portuguese");
-    system("cls");
+    unsigned long long int F_n1 = 0, F_n2 = 1;
 
-    long long a = 0, b = 1;
-
-    while(LLONG_MAX - a > b) {
-        cout << a << " ";
-        a += b;
-        swap(a, b);
+    for(int indice = 0; ULLONG_MAX - F_n1 > F_n2; indice++) {
+        cout << "F_" << indice << " = " << F_n1 << endl;
+        F_n1 += F_n2;
+        swap(F_n1, F_n2);
     }
 
     system("pause");
+
     return 0;
 }
