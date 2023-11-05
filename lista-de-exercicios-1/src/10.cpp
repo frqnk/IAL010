@@ -30,7 +30,7 @@ int main() {
     }
 
     cout << endl;
-    system("pause");
 
+    system("pause");
     return 0;
 }
