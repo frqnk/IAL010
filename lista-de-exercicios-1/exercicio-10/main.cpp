@@ -1,10 +1,13 @@
 #include <iostream>
 #include <locale>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
+    srand(time(NULL));
 
     int n;
 
@@ -18,14 +21,28 @@ int main() {
         cin >> vetor[i];
     }
 
-    // "ICan'tBelieveItCanSort", afinal, por que não?
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < n; j++) {
-            if(vetor[i] < vetor[j]) {
-                swap(vetor[i], vetor[j]);
+    // Bogosort, afinal, por que não?
+
+    long double n_tentativas = 0;
+    for(bool condicao_de_saida = false; condicao_de_saida != true; n_tentativas++) {
+        for(int i = 0; i < n-1; i++) {
+            if(vetor[i] > vetor[i+1]) {
+                break;
+            }
+            if(i == n-2) {
+                condicao_de_saida = true;
+            }
+        }
+        if(condicao_de_saida != true) {
+            int posicao_aleatoria;
+            for(int i = 0; i < n; i++) {
+                posicao_aleatoria = rand() % n;
+                swap(vetor[i], vetor[posicao_aleatoria]);
             }
         }
     }
+
+    cout << "Depois de " << n_tentativas << " tentativas:" << endl;
 
     cout << "vetor[" << n << "] = {";
     for(int i = 0; i < n; i++) {
